@@ -6,11 +6,11 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		testStringTokenizer();
+		testTtringTokenizer();
 		
 	}
 
-	private static void testStringTokenizer() {
+	private static void testTtringTokenizer() {
 		String str = "www.baidu.com";
 		
 		StringTokenizer tokenizer = new StringTokenizer(str,".");
