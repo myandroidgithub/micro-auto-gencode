@@ -87,4 +87,10 @@ public class ElementExpression extends ReadXmlExpression{
 		}
 		return ss;
 	}
+
+	@Override
+	public String toString() {
+		return "ElementExpression [eles=" + eles + ", eleName=" + eleName + ", condition=" + condition + "]";
+	}
+	
 }
