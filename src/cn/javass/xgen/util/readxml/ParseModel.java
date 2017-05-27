@@ -22,6 +22,7 @@ public class ParseModel {
 	 * 条件表达式
 	 */
 	private String condition;
+	
 	public String getEleName() {
 		return eleName;
 	}

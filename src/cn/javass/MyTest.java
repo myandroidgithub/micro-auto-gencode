@@ -1,10 +1,9 @@
 package cn.javass;
 
 import cn.javass.xgen.util.readxml.Context;
-import cn.javass.xgen.util.readxml.ElementExpression;
-import cn.javass.xgen.util.readxml.ElementsExpression;
-import cn.javass.xgen.util.readxml.ElementsTerminalExpression;
 import cn.javass.xgen.util.readxml.Parser;
+import cn.javass.xgen.util.readxml.Parser2;
+import cn.javass.xgen.util.readxml.ReadXmlExpression;
 
 public class MyTest {
 
@@ -27,7 +26,10 @@ public class MyTest {
 		
 		String [] ss = null;
 //		for(int i=0;i<1000;i++){
-			 ss = Parser.parse("GenConf/NeedGens/NeedGen/Params/Param$").interpret(ctx);
+//			ss = Parser.parse("GenConf/NeedGens/NeedGen/Params/Param$").interpret(ctx);
+			ReadXmlExpression parse = Parser.parse("GenConf/NeedGens/NeedGen/Params/Param$");
+			
+			ss = parse.interpret(ctx);
 //			String [] ss2 = Parser.parse("GenConf/NeedGens/NeedGen/Params/Param$.id$").interpret(ctx);
 //		}
 		
