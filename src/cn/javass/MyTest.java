@@ -1,9 +1,6 @@
 package cn.javass;
 
 import cn.javass.xgen.util.readxml.Context;
-import cn.javass.xgen.util.readxml.ElementExpression;
-import cn.javass.xgen.util.readxml.ElementsExpression;
-import cn.javass.xgen.util.readxml.ElementsTerminalExpression;
 import cn.javass.xgen.util.readxml.Parser;
 
 public class MyTest {
@@ -32,7 +29,7 @@ public class MyTest {
 //		}
 		
 		for (String srr : ss) {
-			System.out.println("s=="+srr);
+		    System.out.println("s=="+srr);
 		}
 	}
 }
