@@ -29,10 +29,7 @@ public class MyTest {
 		
 		String[] ss = genConf.interpret(ctx);
 		
-		for (String s : ss) {
-                    
-		    System.out.println(s);
-                }
+		
 		
 		
 //		String [] ss = null;
@@ -41,8 +38,5 @@ public class MyTest {
 ////			String [] ss2 = Parser.parse("GenConf/NeedGens/NeedGen/Params/Param$.id$").interpret(ctx);
 ////		}
 //		
-//		for (String srr : ss) {
-//		    System.out.println("s=="+srr);
-//		}
 	}
 }
