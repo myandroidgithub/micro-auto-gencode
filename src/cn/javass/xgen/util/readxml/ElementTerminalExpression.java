@@ -50,4 +50,9 @@ public class ElementTerminalExpression extends ReadXmlExpression{
 		return ss;
 	}
 
+    @Override
+    public String toString() {
+        return "ElementTerminalExpression [eleName=" + eleName + ", condition=" + condition + "]";
+    }
+	
 }
