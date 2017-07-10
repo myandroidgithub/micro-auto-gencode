@@ -55,4 +55,16 @@ public class ElementTerminalExpression extends ReadXmlExpression{
 		return "ElementTerminalExpression [eleName=" + eleName + ", condition=" + condition + "]";
 	}
 
+	@Override
+	public Object clone(){
+		ElementTerminalExpression obj = null;
+		try{
+			obj = (ElementTerminalExpression)super.clone();
+		}catch(Exception err){
+			err.printStackTrace();
+		}
+		
+		return obj;
+	}
+	
 }

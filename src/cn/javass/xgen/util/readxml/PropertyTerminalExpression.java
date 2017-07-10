@@ -23,6 +23,16 @@ public class PropertyTerminalExpression extends ReadXmlExpression{
 		return ss;
 	}
 
-	
+	@Override
+	public Object clone(){
+		Object obj = null;
+		try{
+			obj = super.clone();
+		}catch(Exception err){
+			err.printStackTrace();
+		}
+		
+		return obj;
+	}
 	
 }

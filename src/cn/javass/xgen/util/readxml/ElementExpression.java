@@ -93,4 +93,24 @@ public class ElementExpression extends ReadXmlExpression{
 		return "ElementExpression [eles=" + eles + ", eleName=" + eleName + ", condition=" + condition + "]";
 	}
 	
+	@Override
+	protected Object clone() {
+		ElementExpression obj = null;
+		try {
+			obj = (ElementExpression)super.clone();
+			List<ReadXmlExpression> objEles = new ArrayList<ReadXmlExpression>();
+			
+			for (ReadXmlExpression ele : eles) {
+				objEles.add((ReadXmlExpression)ele.clone());
+			}
+			
+			obj.setEles(objEles);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return obj;
+	}
+	
 }

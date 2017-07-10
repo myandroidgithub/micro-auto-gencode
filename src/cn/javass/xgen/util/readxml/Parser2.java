@@ -92,14 +92,16 @@ public class Parser2 {
 		pm.setEleName(eleName);
 		
 		mapPath.put(eleName, pm);
+		
+		listEle.add(eleName);
 	}
 
 	////////////////////////////////第二大步/////////////////////////
 	private static List<ReadXmlExpression> mapPath2Expression(Map<String, ParseModel> mapPath) {
 		//一定要按照分解的先后顺序来转换成相应的解释器对象
 		List<ReadXmlExpression> list = new ArrayList<ReadXmlExpression>();
-		Set<String> set = mapPath.keySet();//这里和视频上写的区别 视频上在上一步add进list 是不是好一些？
-		for (String key : set) {
+//		Set<String> set = mapPath.keySet();//这里和视频上写的区别 视频上在上一步add进list 是不是好一些？
+		for (String key : listEle) {
 			ParseModel pm = mapPath.get(key);
 			ReadXmlExpression obj = parseModel2ReadXmlExpression(pm);
 			list.add(obj);
@@ -165,22 +167,3 @@ public class Parser2 {
 		return retRe;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
